@@ -41,6 +41,31 @@ else:
     st.success(f"Welcome {name} 👋")
     authenticator.logout("Logout", "sidebar")
 
+    # Sidebar link buttons
+    def styled_link(label, url):
+        return f"""
+        <a href="{url}" target="_blank" style="text-decoration:none;">
+            <div style="
+                background-color:#2b6cb0;
+                color:white;
+                padding:12px 18px;
+                margin-bottom:10px;
+                border-radius:6px;
+                text-align:center;
+                font-weight:bold;
+            ">
+                {label}
+            </div>
+        </a>
+        """
+
+    with st.sidebar:
+        st.markdown(styled_link("Microsoft Intune", "https://admin.microsoft.com"), unsafe_allow_html=True)
+        st.markdown(styled_link("Shared Drive", "https://fpcusa-my.sharepoint.com/:f:/g/personal/atsai_inteplast_com/EsBv6Ol66Q1CgXG_Rbc7KOUBdnHVfhm6PAGKoeChz60zbQ?e=LLFDSK"), unsafe_allow_html=True)
+        st.markdown(styled_link("UPS", "https://www.ups.com/lasso/login?reasonCode=-1"), unsafe_allow_html=True)
+        st.markdown(styled_link("Travel Request", "https://travel.inteplast.com"), unsafe_allow_html=True)
+        st.markdown(styled_link("Asset Manager", "https://fpcusa.sharepoint.com/sites/Inteplast/preoffice/mid/it/ittest/Lists/Asset%20manager/AllItems.aspx?sortField=AssetType&isAscending=false&groupBy=Status&viewpath=%2Fsites%2FInteplast%2Fpreoffice%2Fmid%2Fit%2Fittest%2FLists%2FAsset%20manager%2FAllItems%2Easpx"), unsafe_allow_html=True)
+
     st.title("Intern Onboarding Chatbot")
 
     if "chat" not in st.session_state:
