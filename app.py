@@ -38,7 +38,11 @@ elif st.session_state.get("authentication_status") is None:
     st.stop()
 else:
     name = st.session_state["name"]
-    st.success(f"Welcome {name} 👋")
+    st.success(f"""Welcome IT Intern ??  
+Feel free to ask me questions about the problem when you're helping users.
+
+If the questions are about the IP or require domain accounts,  
+please ask Tracy, Joseph, or Daniel.""")
     authenticator.logout("Logout", "sidebar")
 
     # Sidebar link buttons
@@ -66,7 +70,7 @@ else:
         st.markdown(styled_link("Travel Request", "https://travel.inteplast.com"), unsafe_allow_html=True)
         st.markdown(styled_link("Asset Manager", "https://fpcusa.sharepoint.com/sites/Inteplast/preoffice/mid/it/ittest/Lists/Asset%20manager/AllItems.aspx?sortField=AssetType&isAscending=false&groupBy=Status&viewpath=%2Fsites%2FInteplast%2Fpreoffice%2Fmid%2Fit%2Fittest%2FLists%2FAsset%20manager%2FAllItems%2Easpx"), unsafe_allow_html=True)
 
-    st.title("Intern Onboarding Chatbot")
+    st.title("IT Intern Assist Chatbot")
 
     if "chat" not in st.session_state:
         st.session_state.chat = []
