@@ -1,0 +1,455 @@
+********************************
+PRIMARY JOB:
+    - Replying to emails mainly about:
+        - IPG Workflow
+STUDY:
+    - Day Force learning sessions
+********************************
+
+1. Change Password:
+    - REMINDER: please remember to connect to your VPN when you try to change the password! 
+    - Log in to “portal.office.com” and click your icon on the top right corner.
+    - After that, click “View account” and scroll down to choose “CHANGE PASSWORD.”
+    - Enter your old password and create your new password
+    - IMPORTANT: 
+        - The password should be at least ten characters.
+        - The password should include upper, lower case, number, and special characters. 
+        - Also, the password CANNOT include your name or company name.
+        - Press Ctrl + Alt + Del and click "Lock" NOT sign out.
+        - Retype a new password to log back in if you are in the system. If yes, you are all set.
+
+1-1. RENEW “Employee” Wi-Fi: (If you change your password on “portal.office.com”)
+    	- iPhone
+            - Go to “Settings,” select “Wi-Fi,” and click the blue “i” icon on “Employee.” 
+            - Then press “Forget This Network”
+            - Then select “Employee” Wi-Fi again and type your credential with your new password
+            - Click “Trust” for this network, and you are all set. 
+        - Android
+            - Go to “Settings” and select “Employee“ Wi-Fi
+            - For certificate: pick “system certificate (domain: fpcusa.com)”
+            - Identify: (your cooperate email)
+            - Code: (your cooperate password)
+
+2-1. Setup new user computer (WITHOUT device backup on the cloud, primarily laptops sent out from Inteplast)(Joseph):
+    - Set up admin:  "localadmin"
+    - Add user account: press Windows and  type "add, edit, or remove other users."
+    - If you need local IT, press Windows and type "computer management."
+        Find "Local Users and Groups," "Users," and "Administrator" by right-clicking on "Properties/General" and unchecking "Account is disabled."
+    - Suggested: Untag mail, Microsoft Store, Lenovo
+    - Install Anti-Virus (Eset):
+        - Update only use Ethernet cable 
+    - Install ACS or AS400:
+        - Install Java 261
+        - IBM 1.9.1 or Newest version/ Window-Application/ 64-all-user
+            - Install process:
+                - Access Client: Yes
+                - HCM or LAN: No
+                = After: Yes -> No -> Yes -> No
+            - Setup:
+                - New display Session:
+		    - Access Client Solution
+		
+
+                    - Session Name: "AS400"
+                    - Destination Name: "as400.inteplast.com"
+                - Generate Workstation ID:
+   		    - Use computer name
+		    - Beginning
+		    - Add prefix to indicate display or printer
+                    - Check "Avoid duplicate names on this workstation"
+                    - Check "Avoid duplicate names with other workstation"
+                - Advanced: All Yes
+                - Save as AS400 onto the desktop
+                Copy it to a user account by Going to "This PC/Windows C/Users/.../desktop." 
+	    - data transfer:
+		- Access Client Solution 
+		- System Configuration
+		- Properties
+			- Convert CCSID 65535
+			- System Name: AS400
+    - Install "IBM: Access_WindowsAP_English"
+    - Install "TeamViewer"
+2-2. Setup new user computer (WITH device backup on the cloud): ### forgot the process need double check)
+    - Set up local admin
+    - Add the Device Name to Intune
+    - Assign the user to be the primary user on Intune 
+    - Do Windows and Dell/Lenovo update
+
+3. Setup minipc computer: (ITV)
+    - Set up admin (Do not connect to the Internet Now):  etc (inteplast)   password: (blank)
+    - Set up ITV:
+        - Change ITV name:
+            - Rename to, etc. BSAZITV2
+        - Windows Update (Connection to Internet Now)
+        - Install TeamViewer:
+            - REMINDER: no need to sign in account 
+            - REMINDER: ITV needed to be remotely accessed without needing the permission 
+            - INSTALL: choose "unattended access to this device"
+            - Check "Start TeamViewer with Windows"
+            - Check "Grant easy access"
+            - Sign in to the account and go to email to make it trust the device
+            - Add current device into "AppSpace devices" (IPHQITV)
+        - Find AppSpace in OneDive -> ShareIT
+        - Install AppSpace:
+        - Add label on pc
+
+4. Packing New Computer (UPS):
+    - IMPORTANT: Ask user's Address and Receiver
+    - IMPORTANT: Make sure your package is sending out international or domestic
+    - IMPORTANT (Cancelation for the shipment):
+    - Cancel shipping item:
+        - Select "Shipping"
+        - Press "Void"
+    - REMINDER: UPS comes to the office every 4:30 pm
+    - UPS campus ship:
+        - Website: https://www.campusship.ups.com/cship/create?loc=en_US
+        - Search for the information tag from "Address Book." If you cannot find it, create a new one
+        - Create a new "Address Book"
+            - ### (Haven't done it) )
+        - Record Weight: PC = ~5lbs if over 10lbs extra price will be added
+        - No time press: 
+            - Service Normal - Ground (domestic)
+            - Service Standard (international)
+        - WITH time press:
+            - (Haven't done it)
+        - Send email notification
+        - Preference: 
+            - Format: etc (IPHQ 0080)
+                - Plan Code: 4 chars
+                - blank
+                - Quan Center: 4 characters or numbers
+        - Personal E-mail Messages:
+            - Add something you know display in your email
+        - IMPORTANT: 
+            - Save invoice as pdf
+            - Save label as a pdf
+        - Send an email to the destination company with the tracking number in it
+        - Better receive an email reply from them to make sure they keep track of that item
+        - Additional Shipping Options
+            - Email
+            - Check all boxes
+        - Select tax: (leave it all default)
+        - Access International Forms: (Only for international)
+            - Add product:
+                - Remember to Change the item value 
+                - Unit of Measures: Pieces
+                - Other remain the default
+    - Print out the label:
+        - Tape the label all over the label on the box (avoid water defecting the label)
+
+5. Network Password:
+    - Employee: (Own Microsoft 365 password)
+	- iPhone:	
+		- Go to “Settings,” select “Wi-Fi,” and click the blue “i” icon on “Employee.”  
+		- Then press “Forget This Network.” 
+		- Select “Employee” Wi-Fi again and type your credentials using your new password. 
+		- Click “Trust” for this network, and you are all set.
+	- Android: 
+		- Go to “Settings” and select “Employee“ Wi-Fi 
+		- For the certificate: pick “system certificate (domain: fpcusa.com)” 
+		- Identify: (cooperate email) 
+		- Code: (cooperate password) 
+
+6-1. For details on removing a user, see ### Is there another app for all users? )
+    - IMPORTANT: Must receive a formal email or oral double-check before removing or deactivating the user
+    - IMPORTANT: Never delete any user account WITHOUT double check it
+    - For IT admin: 
+        - Meraki
+    - For All users:
+        - Zoom: deactivate
+        - Eset: disable
+        - Microsoft 365: deactivate
+    - For non-Inteplast or Formosa employees:
+        - Nasuni: (Special case)
+7. Set up a new pc for a new user:
+    - Change the device name and check if it is displayed on Microsoft Intune
+    - Move all the data from the old device:
+        - Normally, copy all the data into an external driver
+        - The computer is not working, unplug the hard drive out of the old computer
+    - Let the user log in to the computer and start moving files into the new computer
+    - Let the user log in to the new computer to check whether they can sign into the lookout system
+    - Start adding all the archives back to their email
+    - Add archive, go to file 
+
+8. Install printer driver:
+    - Check the printer's brand and model
+    - Double check if the device is in the "Control Panel"
+    - If you cannot find it, download the printer driver
+    - Check again in the "Control Panel."
+    - Print the test page
+    - Open Word and check if Word can detect the printer
+
+9. REMINDER: (When helping users, it take a lot of time) 
+    - Check Dell update (Dell Optimizer)
+    - Turn off the Dell network
+
+10. Add primary user to the device:
+    - Go to "portal.office.com"
+    - Search "Microsoft Intune"
+    - Device -> All Device -> Search Device ID
+    - Add Primary user using the user email address
+
+11. Login to localadmin:
+    - Account: .\localadmin
+    - Pass: (Check on the Intune portal)
+
+12. IMPORTANT TIME SENSITIVE: Barracuda Sentinel (suspicious login): ### All clear process )
+    - Will receive an email reminder from Barracuda Sentinel 
+    - IMPORTANT: Never trust the user by its word; must double check before allowing users to use its account
+    - IMPORTANT: Need to double check if the login could be truly malicious, but also could be accidentally blocked  
+        - Ways to check the true malicious login:
+            - Check the region (Might be China or Russia)
+            - Check the login location matches the area the user is located at
+13. PulseSecur non-pop-up
+
+
+14. Workflow issue:
+    - "Please connect to the Corporate network first" Check if they are in the company
+        - Normally happened in users who are not in HQ
+        - Go to Network settings 
+        - Change adapter Options
+        - Ethernet Properties
+        - IPV4 Address settings
+            - "Use the following DNS server addresses:"
+                - if primary: 191 do 172
+                - Alter: 172.19.254. 52 
+                - if primary: 172 do 191
+                - Alter: 191.237.24.226
+	- In cmd, do: ipconfig /flushdns
+
+15. Guide to migrating file shares to OneDrive, Teams, and SharePoint
+    - https://learn.microsoft.com/en-us/sharepointmigration/fileshare-to-odsp-migration-guide
+    - https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started
+
+16. AS400 installation:
+    - Choose "Access_WindowsAP_English"
+        - ODBC driver package (For Programmer)
+        - Please noted 
+            Upgrading from IBM i Access for Windows is not supported. You must remove it before you install this package. 
+            - Refer to Section 1.0 for the list of features that are not included. If you want to continue using features in IBM i Access for Windows not
+                    Included in this package, do not install this package. Continue to use the latest service pack, 7.1 IBM i Access for Windows.
+                - IBMiAccess_v1r1_WindowsAP_English.zip
+            - Package location
+                - \\fuhqhds1.fpcusa.com\sw\IBM i Access Client Solutions\IBMiAccess_v1r1_WindowsAP_English.zip
+            - To Install:
+                - \\fuhqhds1.fpcusa.com\sw\IBM i Access Client Solutions\IBMiAccess_v1r1_WindowsAP_English.zip
+                - \Image64a\Setup.exe
+            - To Uninstall 
+                - Select Control Panel > Add/Remove Programs.
+                - Select IBM® i Access Client Solutions - Windows Application Package from the list of installed programs, and click remove
+
+17. Cannot access to an external drive:
+    - Ping first 
+    - If can
+        - Switch to IP address ping
+            - If can 
+                - Check the password credential if it is expired. Go to the head address again 
+                    - If you change the password, go to the lock screen and log back in
+                    - Clean windows credential. 
+                    - find ip address cmd -> ping fuhqhds1 -> type ip address in file explore
+                    - Retype password
+                    - CHECK: if the account is been locked out
+            - If you cannot, including yourself
+                - Nasuni
+                - "Reboot immediately" 
+    
+
+18. Disk clean up: (clean at least 10Gb)
+    - Bin files
+        - Remove-Item -path 'C:\Program Files (x86)\Microsoft Intune Management Extension\Content\Incoming\*.bin'
+    - Temp file
+    - C drive Properties
+        - Properties
+            - Disk Cleanup
+    - Storage settings (last step!)
+        - System & reserved (local admin)
+            - System Restore
+            - Manage System Restore
+
+19. If Dell Command cannot update:
+    - Install universal version
+
+20.  
+	'ezdev.inteplast.com'
+	- Sites: 
+		- ezdev: right click -> 'add application'
+			- name:
+			- path:
+		- Then, ezpgmr will create the folder itself.
+		- Under folder do restrict webConnectionString.config
+			- right click property 
+				- security -> Advanced
+					- SYSTEM and dspgrm 
+						- Read & execute
+						- Read
+21-1. Set Up Pulse Secure:
+	- Add a new section, press the "+"
+		- Type: "Policy Secure (UAC)"
+		- Name: "FPC MFA"
+		- Server URL: "fpcvpn.fpcusa.com"
+
+21-2. Repair Pulse Secure (MFA White screen):
+	- 
+
+21-3. Repair Pulse Secure (MFA does not show up):
+	
+22. https://www39.fpcusa.com login issue:
+
+23. as400 default printer:(check if the printer writer is up) 
+	- login to as400
+	- Press F9 to go to pocket menu: 
+		- Press "UO" (change the output queue to the user's request) 
+		- Press Enter 
+	- Press "S" (sign out)
+	- Ask the user to sign in again
+	- Have the user try to print
+23-1. as400 email to self:(check if the printer writer is up) 
+	- login to as400
+	- Press F9 to go to pocket menu: 
+		- Press "UO" (change the output queue to the user's request) 
+			- QPRINT
+		- Press Enter 
+	- Press "S" (sign out)
+	- Ask the user to sign in again
+	- Have the user try to print
+24. Add user to docking group:
+   	- switch to local admin account:
+	- open cmd:
+		- net localgroup administrators "AzureAD\userid" /add
+		- net localgroup docker-users "AzureAD\ctso@inteplast.com" /add
+	- restart laptop
+
+25. Travel Request For Whitelisting The Account:
+	- Go to: travel.inteplast.com
+		- Press "+ New" for a new request
+		- Press "item" under "+ New"
+		- Fill in the username and "Duration"
+		- Then, press "Save."
+
+26. Change Travel Request For Whitelisting The Account:
+	- Go to: travel.inteplast.com
+		- Find the user you need to change in the "Travel Request"
+		- Check the user and click the "Edit."
+		- Then, you can change the request in that form.
+27. Printer Server Info:
+	- Go to folder explorer and type "\\fuhqnts4z\"
+	- You can find all the printers on the list (Most commonly used printer in HQ):
+		- IPHQADQ6  
+		- IPHQPOQ11 
+		- IPHQPOQ3  
+		- IPHQWPQ2  
+		- IPHQCRQ1  
+		- IPHQMKQ7  
+		- IPHQWPQ7  
+		- Q9  
+		- IPHQADQ4  
+		- IPHQMKQ9  
+
+
+28. Internet Drive Info:
+	- Inteplast account:
+		- \\fuhqhds1.fpcusa.com\iphqac           O drive	
+		- \\fuhqhds1.fpcusa.com\usr              H drive	
+		- \\fuhqhds1.fpcusa.com\home	         F drive
+		- \\fuhqhds1.fpcusa.com\sw 	         G drive
+		- \\iphqnfs1.fuhq.home.usa\iphqsf        Y drive
+		- \\iphqnfs1.inteplast.com\iphqacwork    S drive	
+		- \\iphqnfs1.inteplast.com\LSGLAC        F drive
+		
+	- Garland account:
+		- \\lsglnfs2.fpcusa.com\iphqacwork       S drive    	
+		- \\fuhqhds1.fpcusa.com\iphqac\AP        O drive 
+		- \\fuhqhds1.fpcusa.com\iphqac\Form W9 
+	- IBS App Special:	
+		- \\ipwf.inteplast.com\Pulished          Z drive(Stop Support)
+		- https://ibssystem.inteplast.com/
+	- Accounting	
+		- \\172.18.128.31\ACAutoReport		U drive
+29. Microsoft Admin Center("Portal.office.com"):
+	- Inteplast admin:
+		- your main account:
+    	- Coroplast admin:
+	- About:
+        	- "Endpoint Management" -> Device (Local admin password)
+        	- "Microsoft Identity"  -> Account takeover
+        	- "Microsoft Exchange"  -> Email
+
+30. Office repair steps:
+	- Switch to local admin account:
+		- Press Window key
+		- Go to "Add or remove program"
+		- "Microsoft 365" or "Office"
+		- Select "Modify"
+			- "Quick Repair":
+				- Wait for it to finish and switch back to the user's account.
+ 			- "Full Repair":
+				- Wait for it to finish and switch back to the user's account.
+				- Type the product key to activate the office system.
+					- Sales office or HQ users:
+						- Open the xml file inside the office-2019 folder
+						to get the product key
+			- IMPORTANT:
+				- If "Full repair" only delete the office, go to the "ShareIT" folder to find the 
+30-1. Condition To Do Office Repair: 
+
+32. All Applications Overview:
+	- Barracuda Sentinel:
+        	- Check if there are any suspicious login
+	- Pulse Secure (VPN):
+	- ESET (Anti-virtus) (Old): 
+	- SentinelOne (Anti-Virtus) (New):
+        	- Only at inteplast.com
+	- AppSpace:
+		- Web: https://cloud.appspace.com/signin/index.html#!/login
+		- AppSpace Admin
+    	- Microsoft 365:
+        	- Web: portal.office.com
+    	- Sentinel Agent:
+    	- WordPress: 
+        	- Extension
+            		- miniOrange SAML SSO Multiple IDP: Version 25.0.8
+            	- IMPORTANT: Below the same one is invalid do not use
+            		- miniOrange SSO Login Restriction: Version 1.0.0
+        - Test server login:
+        - Try to install:
+            	- https://wordpress.org/plugins/sso-for-azure-ad/#installation
+            	- miniOrange:
+                	- https://plugins.miniorange.com/saml-single-sign-on-sso-wordpress-using-azure-ad
+    	- Hardcopy an IP address: (host file) C:\Windows\System32\drivers\etc\host
+        - ext. 172.18.128.42 ipg.inteplast.com
+33. String Too Long:
+
+
+-ODBC setting:
+-Download->IBM ACS ODBC EXE from the company portal
+- window search "ODBC Data Source"
+- Add new data 
+    - "Add..." pick "Client Access ODBC Driver 32-bit"
+    - Finish
+    - General 
+        - Data source name: FPCTX1
+        - System: "AS400.INTEPLAST.COM" or ""
+    - Server
+        - SQL (first one)
+        - Default SQL:
+            - worklib
+        - Library list:
+            - ipuser
+    - Conversions
+        - check "Convert"
+    - apply -> ok
+
+
+-Excel import ODBC files or query
+    -Finish ODBC setting first 
+        -open excel -> File -> option -> Data
+        -Check:From Microsoft Query(Legacy) -> OK
+            -Function bar above -> Data -> Get data -> Legacy Wizard -> From Microsoft Query(Legacy)
+        -Client Acess ODBC ->finish setting step by step
+
+-Outlook shows no implement or Office 2019 shows uprading to Office 2016
+    -Open registry and follow path:
+        :HKLM\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\SecurityManager\CapAuthz\ApplicationsEx
+        -Right-click the SecurityManager key, and select Permissions.
+        Select Advanced, and select the Replace all child object permission entries with inheritable permission entries from this object check box.
+            -delete SecurityManager

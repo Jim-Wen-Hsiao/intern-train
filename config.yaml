@@ -1,0 +1,9 @@
+credentials:
+  usernames:
+    intunecgu:
+      name: Intune Intern
+      password: '$2b$12$iZgn6hXHgKCtdzuU/ZjEB.Sr7vNmjZn5q4JnZhVJn.5bSXwKG80XC'
+cookie:
+  name: chatbot_auth
+  key: some_secure_key
+  expiry_days: 7
