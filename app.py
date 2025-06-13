@@ -9,7 +9,7 @@ import pathlib
 
 # Load environment variables
 load_dotenv()
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = st.secrets["OPENAI_API_KEY"]
 
 # Load config.yaml for login credentials
 config_path = pathlib.Path(__file__).parent / "config.yaml"
